@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edinson Alva Diaz - Portfolio</title>
   <style>
     body {
@@ -38,7 +38,8 @@
       color: #003366;
     }
 
-    .skills span {
+    .skills span,
+    .badge {
       display: inline-block;
       background-color: #d9d9d9;
       border-radius: 5px;
@@ -53,6 +54,17 @@
     }
 
     a:hover {
+      text-decoration: underline;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+
+    .contact a:hover {
       text-decoration: underline;
     }
   </style>
@@ -81,7 +93,7 @@
         </li>
         <br>
         <li>
-          <a href="https://github.com/Edi2806/IoT%Traffic%Simulation" target="_blank">
+          <a href="https://github.com/Edi2806/IoT_Final_Simulation" target="_blank">
             IoT Traffic Simulation
           </a><br>
           Smart traffic light system with SUMO, MQTT, and Node-RED. Includes data analysis and dashboard integration.
@@ -99,46 +111,6 @@
     <div class="card">
       <h2>Skills</h2>
       <div class="skills">
-        <span>Python</span>
-        <span>SQLite</span>
-        <span>Raspberry Pi</span>
-        <span>MQTT</span>
-        <span>Node-RED</span>
-        <span>SUMO</span>
-        <span>Tkinter</span>
-        <span>Git</span>
-        <span>WebSockets</span>
-      </div>
-    </div>
-  </div>
-</body>
-
-</html>
-
-<section>
-    <h2>About Me</h2>
-    <p>I’m a final-year student at London South Bank University, passionate about building intelligent, real-world systems using Python, Raspberry Pi, and IoT technologies. I focus on blending software with hardware to create impactful solutions.</p>
-</section>
-
-<section>
-    <h2>Featured Projects</h2>
-    <div class="project">
-        <strong><a href="https://github.com/Edi2806/Wireless-Surveillance-Car" target="_blank">Wireless Surveillance Car</a></strong>
-        <p>IoT vehicle with camera streaming, ultrasonic obstacle detection, and remote control using Python on Raspberry Pi.</p>
-    </div>
-    <div class="project">
-        <strong><a href="https://github.com/Edi2806/IoT%Final%Simulation" target="_blank">IoT Traffic Simulation</a></strong>
-        <p>Smart traffic light control system with SUMO, MQTT, and Node-RED. Includes data analysis and dashboard integration.</p>
-    </div>
-    <div class="project">
-        <strong><a href="https://github.com/Edi2806/Cache-and-Database-Project" target="_blank">Cache & Database Project</a></strong>
-        <p>Simulated SMP cache memory protocols and developed a Python + SQLite GUI app for dance class registration.</p>
-    </div>
-</section>
-
-<section>
-    <h2>Skills</h2>
-    <div class="skills">
         <span class="badge">Python</span>
         <span class="badge">SQLite</span>
         <span class="badge">Raspberry Pi</span>
@@ -148,17 +120,18 @@
         <span class="badge">Tkinter</span>
         <span class="badge">Git</span>
         <span class="badge">WebSockets</span>
+      </div>
     </div>
-</section>
 
-<section>
-    <h2>Contact</h2>
-    <div class="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <div class="contact">
         <a href="https://github.com/Edi2806" target="_blank">GitHub Profile</a>
         <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
         <a href="mailto:your-email@example.com">your-email@example.com</a>
+      </div>
     </div>
-</section>
-
+  </div>
 </body>
+
 </html>
