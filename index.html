@@ -1,129 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Edinson Alva Diaz Portfolio - Embedded & IoT Developer">
-  <meta property="og:title" content="Edinson's Portfolio" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://edi2806.github.io/" />
-  <title>Edinson Alva Diaz - Portfolio</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edinson Alva Diaz Portfolio</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f6f9;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      background: #f5f7fa;
       color: #333;
     }
-
     header {
-      background-color: #003366;
+      background: #003366;
       color: white;
-      padding: 30px 0;
+      padding: 2rem 1rem;
       text-align: center;
     }
-
     nav {
-      background-color: #002244;
-      padding: 10px;
-      text-align: center;
+      background: #022c56;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem 0;
     }
-
     nav a {
-      color: #fff;
-      margin: 0 15px;
+      color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
     }
-
-    nav a:hover {
-      text-decoration: underline;
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .card {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 25px;
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      color: #003366;
-    }
-
-    .project {
-      margin-bottom: 25px;
-    }
-
-    .project a {
-      color: #003366;
-      font-weight: bold;
-      font-size: 18px;
-      text-decoration: none;
-    }
-
-    .project a:hover {
-      text-decoration: underline;
-    }
-
     .skills span {
+      background: #ddd;
+      padding: 0.4rem 0.8rem;
+      margin: 0.3rem;
       display: inline-block;
-      background-color: #d9d9d9;
       border-radius: 8px;
-      padding: 8px 14px;
-      margin: 5px;
-      font-size: 14px;
+      font-size: 0.9rem;
     }
     .contact-icons {
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 2rem;
       flex-wrap: wrap;
-      margin-top: 20px;
+      margin-top: 1rem;
     }
-
     .contact-icons a {
       text-align: center;
+      font-size: 0.85rem;
+      color: #222;
       text-decoration: none;
-      color: #003366; /* or your theme color */
-      font-weight: 500;
     }
-
-    .contact-icons a img {
-      width: 40px;
-      height: 40px;
+    .contact-icons img {
+      width: 32px;
+      height: 32px;
       display: block;
-      margin: 0 auto 5px;
-      transition: transform 0.2s;
+      margin: 0 auto 0.4rem;
     }
-
-    .contact-icons a:hover img {
-      transform: scale(1.1);
-    }
-
-    .contact-icons a span {
-      display: block;
-      margin-top: 4px;
-    }
-
-
   </style>
 </head>
-
 <body>
   <header>
     <h1>Edinson Alva Diaz</h1>
@@ -137,45 +79,30 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container">
-    <section id="about" class="card">
-      <h2>About Me</h2>
-      <p>I’m a final-year student at London South Bank University, passionate about building intelligent, real-world systems using Python, Raspberry Pi, and IoT technologies. I focus on blending software with hardware to create impactful solutions.</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a final-year student at London South Bank University, passionate about building intelligent, real-world systems using Python, Raspberry Pi, and IoT technologies. I focus on blending software with hardware to create impactful solutions.</p>
+  </section>
 
-    <section id="projects" class="card">
-      <h2>Featured Projects</h2>
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <p><strong>Wireless Surveillance Car</strong><br>IoT vehicle with camera streaming, ultrasonic obstacle detection, and remote control using Python on Raspberry Pi.</p>
+    <p><strong>IoT Traffic Simulation</strong><br>Smart traffic light control system with SUMO, MQTT, and Node-RED. Includes data analysis and dashboard integration.</p>
+    <p><strong>Cache & Database Project</strong><br>Simulated SMP cache memory protocols and developed a Python + SQLite GUI app for dance class registration.</p>
+  </section>
 
-      <div class="project">
-        <a href="https://github.com/Edi2806/Wireless-Surveillance-Car" target="_blank">Wireless Surveillance Car</a>
-        <p>IoT vehicle with camera streaming, ultrasonic obstacle detection, and remote control using Python on Raspberry Pi.</p>
-      </div>
-
-      <div class="project">
-        <a href="https://github.com/Edi2806/IoT_Traffic_Simulation" target="_blank">IoT Traffic Simulation</a>
-        <p>Smart traffic light control system with SUMO, MQTT, and Node-RED. Includes data analysis and dashboard integration.</p>
-      </div>
-
-      <div class="project">
-        <a href="https://github.com/Edi2806/Cache-and-Database-Project" target="_blank">Cache & Database Project</a>
-        <p>Simulated SMP cache memory protocols and developed a Python + SQLite GUI app for dance class registration.</p>
-      </div>
-    </section>
-
-    <section id="skills" class="card">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>Python</span>
-        <span>SQLite</span>
-        <span>Raspberry Pi</span>
-        <span>MQTT</span>
-        <span>Node-RED</span>
-        <span>SUMO</span>
-        <span>Tkinter</span>
-        <span>Git</span>
-        <span>WebSockets</span>
-      </div>
-    </section>
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <span>Python</span>
+    <span>SQLite</span>
+    <span>Raspberry Pi</span>
+    <span>MQTT</span>
+    <span>Node-RED</span>
+    <span>SUMO</span>
+    <span>Tkinter</span>
+    <span>Git</span>
+    <span>WebSockets</span>
+  </section>
 
     <section id="contact" class="card">
       <h2>Contact</h2>
