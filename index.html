@@ -88,24 +88,38 @@
       margin: 5px;
       font-size: 14px;
     }
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
 
-    .contact a {
-      margin: 0 10px;
+    .contact-icons a {
       text-align: center;
-      display: inline-block;
-      font-size: 0.9rem;
-      color: #003366;
       text-decoration: none;
+      color: #003366; /* or your theme color */
+      font-weight: 500;
     }
-    
-    .contact-icons img {
+
+    .contact-icons a img {
+      width: 40px;
+      height: 40px;
       display: block;
-      margin: 0 auto;
+      margin: 0 auto 5px;
+      transition: transform 0.2s;
     }
+
     .contact-icons a:hover img {
       transform: scale(1.1);
-      transition: transform 0.2s ease-in-out;
     }
+
+    .contact-icons a span {
+      display: block;
+      margin-top: 4px;
+    }
+
 
   </style>
 </head>
@@ -166,10 +180,10 @@
     <section id="contact" class="card">
       <h2>Contact</h2>
       <div class="contact-icons">
-        <a href="https://github.com/Edi2806" target="_blank"><img src="icons/github_logo.png" alt="GitHub" width="30" /><br>GitHub</a> 
-        <a href="https://www.linkedin.com/in/edinson-alva-080286229" target="_blank"><img src="icons/linkedin_logo.png" alt="LinkedIn" width="30" /><br>LinkedIn</a>
-        <a href="https://wa.me/447482074190" target="_blank"><img src="icons/WhatsApp_Logo.png" alt="WhatsApp" width="30" /><br>WhatsApp</a>
-        <a href="mailto:edialvadiaz@gmail.com"><img src="icons/email_logo.png" alt="Email" width="30" /><br>Email</a>      
+        <a href="https://github.com/Edi2806" target="_blank"><img src="icons/github_logo.png" alt="GitHub" width="30" /><span>GitHub</span></a> 
+        <a href="https://www.linkedin.com/in/edinson-alva-080286229" target="_blank"><img src="icons/linkedin_logo.png" alt="LinkedIn" width="30" /> <span>LinkedIn</span></a>
+        <a href="https://wa.me/447482074190" target="_blank"><img src="icons/WhatsApp_Logo.png" alt="WhatsApp" width="30" /><span>WhatsApp</span></a>
+        <a href="mailto:edialvadiaz@gmail.com"><img src="icons/email_logo.png" alt="Email" width="30" /> <span>Email</span></a>      
       </div>
     </section>
   </div>
