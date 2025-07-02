@@ -64,6 +64,23 @@
       display: block;
       margin: 0 auto 0.4rem;
     }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 280px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
@@ -76,6 +93,7 @@
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
+    <a href="#photography">Photography</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -129,7 +147,11 @@
         <a href="mailto:edialvadiaz@gmail.com"><img src="icons/email_logo.png" alt="Email" width="30" /> <span>Email</span></a>      
       </div>
     </section>
-  </div>
+    <section id="photography">
+      <h2>Photography</h2>
+      <div class="gallery">
+        <img src="photography/edi.jpg" alt="Edinson Alva Photography" />
+      </div>
+    </section>  
 </body>
-
 </html>
